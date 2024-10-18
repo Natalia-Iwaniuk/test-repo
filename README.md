@@ -5,3 +5,5 @@ Lista zagadnień:
 *narzędzia git
 
 *Visual stuio code
+
+Coś
