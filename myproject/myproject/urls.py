@@ -17,10 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-urlpatterns = [
-    path('myapp/', include('myapp.urls')), # dołączamy reguły url z pliku myapp\urls.py
-    path('admin/', admin.site.urls),
-]
 
-#BASE_URL + prefix 
-#127.0.0.1:8000 + /admin/ +person/list 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('myapp/', include('myapp.urls'))
+]

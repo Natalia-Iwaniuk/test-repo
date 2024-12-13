@@ -1,7 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>{% block title %}{% endblock %}</title>
+        <link href="{% static 'css/myapp.css' %}" rel="stylesheet">
     </head>
     <body>
         <div id="header" >
@@ -9,6 +11,7 @@
         </div>
         <div id="content">
             {% block content %}
+            
             {% endblock %}
         </div>
         <div id="sidebar">
